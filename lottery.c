@@ -36,8 +36,13 @@ int main(int argc, char** argv)
     }
 
     int result = calculate_result(white_balls, power_ball);
+ 
+    if (7 == power_ball)
+    {
+        result = result * 2;
+    }
 
-    printf("%d percent chance of winning\n", result);
-
-    return 0;
+     printf("%d percent chance of winning\n", result);
+ 
+     return 0;
 }
